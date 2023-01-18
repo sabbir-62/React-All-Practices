@@ -28,9 +28,11 @@ const info = [
 const List = () => {
     return (
         <div>
-          {info.map((item) => { 
+            {info.map((item) => { 
             const {name, id, uuid} = item;
+            
             return(
+                
                 <div key={uuid} >
                     <h3>{name}</h3>
                     <h3>{id}</h3>
@@ -38,6 +40,7 @@ const List = () => {
             )
           })}
         </div>
+           
        
     );
 };
