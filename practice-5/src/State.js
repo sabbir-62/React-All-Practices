@@ -30,8 +30,8 @@ export default class State extends Component {
       <div className="text-center">
         <h1>{count}</h1>
         <div>
-            <Button  onClick={this.handleIncrement}>+</Button>
-            <Button  onClick={this.handleDecrement} className = "m-2">-</Button>
+            <Button  onClick={this.handleIncrement} disabled = {count === 10 ? true : false}>+</Button>
+            <Button className = "m-2 btn-secondary" onClick={this.handleDecrement} disabled = {count === 0 ? true : false}>-</Button>
         </div>
       </div>
     )
